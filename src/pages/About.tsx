@@ -33,10 +33,26 @@ const values = [
 ];
 
 const milestones = [
-  { year: "1995", title: "The Beginning", description: "Started as a small family kitchen with a single tawa" },
-  { year: "2005", title: "First Restaurant", description: "Opened our flagship location in Chennai city center" },
-  { year: "2015", title: "Expansion", description: "Grew to 5 locations across Tamil Nadu" },
-  { year: "2024", title: "Digital Era", description: "Launched online ordering and delivery services" },
+  {
+    year: "2023",
+    title: "The Beginning",
+    description: "Started our journey with a passion for authentic dosas and fresh flavors"
+  },
+  {
+    year: "2024",
+    title: "First Milestone",
+    description: "Built a strong local customer base and refined our signature menu"
+  },
+  {
+    year: "2025",
+    title: "Growth Phase",
+    description: "Expanded operations and increased daily customer reach"
+  },
+  {
+    year: "Future",
+    title: "Digital & Expansion",
+    description: "Planning online ordering, delivery services, and new outlets"
+  },
 ];
 
 const About = () => {
@@ -58,7 +74,7 @@ const About = () => {
               Our Story
             </span>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
-              The Art of <span className="text-gradient">Dosa Making</span>
+              South Indian <span className="text-gradient">Dosa Making</span>
             </h1>
             <p className="text-xl text-muted-foreground">
               A journey of passion, tradition, and the pursuit of the perfect dosa
@@ -99,13 +115,11 @@ const About = () => {
             <ScrollReveal direction="right">
               <div className="space-y-6">
                 <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-                  From a Small Kitchen to a <span className="text-gradient">Culinary Legend</span>
+                Authentic South Indian<span className="text-gradient"> Dining Experience in Canada</span>
                 </h2>
                 <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                   <p>
-                    In 1995, our founder, Shri Raghunathan, began making dosas in his small kitchen 
-                    in Chennai. With just a single tawa and a family recipe passed down through 
-                    generations, he created something extraordinary.
+                    DosaKing Palace is a premier South Indian restaurant in Canada, dedicated to serving authentic flavours inspired by the rich culinary traditions of South India. Established in October 2023, the restaurant was founded with a clear vision — to offer high-quality South Indian cuisine prepared using traditional recipes, fresh ingredients, and uncompromising standards.
                   </p>
                   <p>
                     Word of his crispy, golden dosas spread quickly. Neighbors became regulars, 

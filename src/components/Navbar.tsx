@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
+import dosakingLogo from "@/assets/dosaking_logo.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -44,16 +45,13 @@ export const Navbar = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2 group">
-              <motion.div
-                whileHover={{ rotate: 10 }}
-                className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-gold-light flex items-center justify-center"
-              >
-                <span className="text-primary-foreground font-display font-bold text-xl">D</span>
-              </motion.div>
-              <span className="font-display text-2xl font-semibold text-foreground group-hover:text-primary transition-colors">
-                Dosa King
-              </span>
+            <Link to="/" className="flex items-center group">
+              <motion.img
+                src={dosakingLogo}
+                alt="Dosa King"
+                whileHover={{ scale: 1.05 }}
+                className="h-12 md:h-14 lg:h-16 w-auto object-contain"
+              />
             </Link>
 
             {/* Desktop Nav */}

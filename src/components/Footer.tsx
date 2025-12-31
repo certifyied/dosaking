@@ -58,13 +58,13 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-primary mt-1 shrink-0" />
                 <span className="text-muted-foreground">
-                  123 Dosa Street, Food District<br />
-                  Chennai, Tamil Nadu 600001
+                93 Holland Avenue, Ottawa,<br />
+                Ontario, CANADA
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={20} className="text-primary shrink-0" />
-                <span className="text-muted-foreground">+91 98765 43210</span>
+                <span className="text-muted-foreground">(613) 790-8316</span>
               </li>
               <li className="flex items-start gap-3">
                 <Clock size={20} className="text-primary mt-1 shrink-0" />

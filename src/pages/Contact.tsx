@@ -11,12 +11,12 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Visit Us",
-    details: ["123 Dosa Street, Food District", "Chennai, Tamil Nadu 600001"],
+    details: ["93 Holland Avenue, Ottawa, Ontario, CANADA"],
   },
   {
     icon: Phone,
     title: "Call Us",
-    details: ["+91 98765 43210", "+91 98765 43211"],
+    details: ["(613) 790-8316"],
   },
   {
     icon: Clock,
@@ -26,7 +26,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    details: ["hello@dosaking.com", "orders@dosaking.com"],
+    details: ["info@dosaking.com"],
   },
 ];
 
@@ -176,7 +176,7 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
-                        placeholder="+91 98765 43210"
+                        placeholder="(613) 790-8316"
                       />
                     </div>
                     <div className="space-y-2">
@@ -248,7 +248,7 @@ const Contact = () => {
             <ScrollReveal direction="right">
               <div className="h-full min-h-[500px] rounded-2xl overflow-hidden shadow-soft border border-border">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.485855687888!2d80.24167431534242!3d13.06284199081982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2s!4v1703000000000!5m2!1sen!2s"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1234567890123!2d-73.98765432109876!3d40.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05d246e76ddd%3A0xd754c68b004e46d6!2sDosa+King+%7C+Indian+Restaurant+%7C+Bar!5e0!3m2!1sen!2sus!4v1735632000000!5m2!1sen!2sus"
                   width="100%"
                   height="100%"
                   style={{ border: 0, filter: "grayscale(20%) contrast(1.1)" }}
@@ -276,7 +276,7 @@ const Contact = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="xl" asChild>
-                <a href="tel:+919876543210">Call Now</a>
+                <a href="tel:+16137908316">Call Now</a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
                 <a 
