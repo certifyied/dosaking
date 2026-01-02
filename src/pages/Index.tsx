@@ -223,9 +223,8 @@ const Index = () => {
                   A Legacy of <span className="text-gradient">Taste</span>
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  Since 1995, Dosa King has been serving authentic South Indian cuisine with a passion 
-                  for perfection. What started as a small family kitchen has grown into a beloved 
-                  destination for dosa lovers across the city.
+                Since 2023, Dosa King has been serving authentic South Indian cuisine with a passion for perfection. What started as a small family kitchen has grown into a beloved destination for dosa lovers across the city.
+
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
                   Every dosa we serve carries the warmth of tradition, the crispness of expertise, 
