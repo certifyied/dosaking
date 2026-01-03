@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ChevronDown, Star, Clock, Award, Users } from "lucide-react";
+import { ChevronDown, Star, Award, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { MenuCard } from "@/components/MenuCard";
@@ -44,7 +44,6 @@ const featuredItems = [
 
 const stats = [
   { icon: Users, value: "50K+", label: "Happy Customers" },
-  { icon: Clock, value: "29", label: "Years of Legacy" },
   { icon: Star, value: "4.9", label: "Average Rating" },
   { icon: Award, value: "15+", label: "Awards Won" },
 ];
@@ -145,7 +144,7 @@ const Index = () => {
       {/* Stats Section */}
       <section className="py-16 bg-card border-y border-border">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {stats.map((stat, index) => (
               <ScrollReveal key={index} delay={index * 0.1}>
                 <div className="text-center">
