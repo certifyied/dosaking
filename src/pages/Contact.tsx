@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Clock, Mail, Send } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -63,6 +64,13 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Contact Us – Best South Indian Restaurant in Ottawa, Canada</title>
+        <meta 
+          name="description" 
+          content="Contact the best South Indian restaurant in Ottawa, Canada. Get in touch with Dosa King Palace for reservations, catering services, location details, and inquiries." 
+        />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section */}

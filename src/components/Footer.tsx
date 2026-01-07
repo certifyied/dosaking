@@ -1,36 +1,36 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Clock, Instagram, Facebook, Twitter } from "lucide-react";
+import { MapPin, Phone, Clock, Instagram } from "lucide-react";
+import dosakingLogo from "@/assets/dosaking_logo.png";
 
 export const Footer = () => {
   return (
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-gold-light flex items-center justify-center">
-                <span className="text-primary-foreground font-display font-bold text-xl">D</span>
-              </div>
-              <span className="font-display text-2xl font-semibold text-foreground">
-                Dosa King
-              </span>
+            <Link to="/" className="flex items-center group">
+              <motion.img
+                src={dosakingLogo}
+                alt="Dosa King"
+                whileHover={{ scale: 1.05 }}
+                className="h-12 md:h-14 lg:h-16 w-auto object-contain"
+              />
             </Link>
             <p className="text-muted-foreground leading-relaxed">
               Crafting the perfect dosa since 1995. Experience the authentic taste of South India.
             </p>
             <div className="flex gap-4">
-              {[Instagram, Facebook, Twitter].map((Icon, index) => (
-                <motion.a
-                  key={index}
-                  href="#"
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-                >
-                  <Icon size={18} />
-                </motion.a>
-              ))}
+              <motion.a
+                href="https://www.instagram.com/dosa_king_ottawa?igsh=YmkwOXFyYWtrZW9o"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1, y: -2 }}
+                className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                <Instagram size={18} />
+              </motion.a>
             </div>
           </div>
 
@@ -38,7 +38,7 @@ export const Footer = () => {
           <div>
             <h4 className="font-display text-lg font-semibold text-foreground mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              {["Home", "About", "Menu", "Gallery", "Contact"].map((item) => (
+              {["Home", "About", "Menu", "Gallery", "Blog", "Testimonials", "Contact"].map((item) => (
                 <li key={item}>
                   <Link
                     to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
@@ -75,27 +75,6 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
-          <div>
-            <h4 className="font-display text-lg font-semibold text-foreground mb-6">Newsletter</h4>
-            <p className="text-muted-foreground mb-4">
-              Subscribe for special offers and updates.
-            </p>
-            <form className="space-y-3">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-              />
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full px-4 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:shadow-glow transition-all"
-              >
-                Subscribe
-              </motion.button>
-            </form>
-          </div>
         </div>
 
         {/* Bottom Bar */}

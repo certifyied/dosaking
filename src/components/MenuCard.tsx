@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 interface MenuCardProps {
   name: string;
   description: string;
-  price: string;
+  price?: string;
   image: string;
   tag?: string;
 }
@@ -36,13 +36,15 @@ export const MenuCard = ({ name, description, price, image, tag }: MenuCardProps
 
       {/* Content */}
       <div className="p-6 space-y-3">
-        <div className="flex items-start justify-between gap-4">
+        <div className={`flex items-start ${price ? 'justify-between' : ''} gap-4`}>
           <h3 className="font-display text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
             {name}
           </h3>
-          <span className="text-primary font-bold text-lg whitespace-nowrap">
-            {price}
-          </span>
+          {price && (
+            <span className="text-primary font-bold text-lg whitespace-nowrap">
+              {price}
+            </span>
+          )}
         </div>
         <p className="text-muted-foreground text-sm leading-relaxed">
           {description}

@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ChevronDown, Star, Award, Users } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { MenuCard } from "@/components/MenuCard";
@@ -8,36 +9,32 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 import heroDosa from "@/assets/hero-dosa.jpg";
-import plainDosa from "@/assets/menu-plain-dosa.jpg";
-import masalaDosa from "@/assets/menu-masala-dosa.jpg";
-import gheeDosa from "@/assets/menu-ghee-dosa.jpg";
-import specialDosa from "@/assets/menu-special-dosa.jpg";
+import plainDosa from "@/assets/new_plain_dosa.jpg";
+import masalaDosa from "@/assets/new_masala_dosa.jpg";
+import gheeDosa from "@/assets/new_ghee_roast.jpg";
+import cheeseDosa from "@/assets/new_Cheese _Dosa.jpeg";
 
 const featuredItems = [
   {
     name: "Plain Dosa",
     description: "Crispy golden dosa, served with sambar and chutneys",
-    price: "₹80",
     image: plainDosa,
   },
   {
     name: "Masala Dosa",
     description: "Classic dosa filled with spiced potato masala",
-    price: "₹120",
     image: masalaDosa,
     tag: "Popular",
   },
   {
     name: "Ghee Roast",
     description: "Extra crispy dosa roasted in pure clarified butter",
-    price: "₹140",
     image: gheeDosa,
   },
   {
     name: "Cheese Dosa",
     description: "Fusion favorite with melted cheese topping",
-    price: "₹160",
-    image: specialDosa,
+    image: cheeseDosa,
     tag: "Chef's Special",
   },
 ];
@@ -55,6 +52,13 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Best South Indian Restaurant in Canada, Ottawa | Dosa King Palace</title>
+        <meta 
+          name="description" 
+          content="Enjoy authentic South Indian flavors at the best South Indian restaurant in Canada, Ottawa. Dosa King Palace serves crispy dosas, rich curries, and traditional tastes." 
+        />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section */}
@@ -206,7 +210,7 @@ const Index = () => {
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/20 rounded-2xl" />
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-2xl" />
                 <img
-                  src={masalaDosa}
+                  src={plainDosa}
                   alt="Our story"
                   className="relative w-full rounded-2xl shadow-card"
                 />

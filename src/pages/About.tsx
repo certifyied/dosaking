@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Heart, Leaf, Award, Users, Star, ChefHat } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -32,32 +33,16 @@ const values = [
   },
 ];
 
-const milestones = [
-  {
-    year: "2023",
-    title: "The Beginning",
-    description: "Started our journey with a passion for authentic dosas and fresh flavors"
-  },
-  {
-    year: "2024",
-    title: "First Milestone",
-    description: "Built a strong local customer base and refined our signature menu"
-  },
-  {
-    year: "2025",
-    title: "Growth Phase",
-    description: "Expanded operations and increased daily customer reach"
-  },
-  {
-    year: "Future",
-    title: "Digital & Expansion",
-    description: "Planning online ordering, delivery services, and new outlets"
-  },
-];
-
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Ottawa's Best South Indian Restaurant in Canada | Dosa King Palace</title>
+        <meta 
+          name="description" 
+          content="Dosa King Palace is the best South Indian restaurant in Canada, Ottawa, offering authentic dosas, idlis, sambar, and delicious South Indian cuisine." 
+        />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section */}
@@ -169,58 +154,6 @@ const About = () => {
                 </motion.div>
               </ScrollReveal>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline Section */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <ScrollReveal>
-            <div className="text-center mb-16">
-              <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                Our Journey
-              </span>
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-                Milestones & <span className="text-gradient">Memories</span>
-              </h2>
-            </div>
-          </ScrollReveal>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="relative">
-              {/* Timeline Line */}
-              <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-border md:-translate-x-px" />
-
-              {milestones.map((milestone, index) => (
-                <ScrollReveal
-                  key={index}
-                  delay={index * 0.15}
-                  direction={index % 2 === 0 ? "left" : "right"}
-                >
-                  <div className={`relative flex items-center gap-8 mb-12 ${
-                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}>
-                    {/* Content */}
-                    <div className={`flex-1 ml-20 md:ml-0 ${index % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"}`}>
-                      <div className="bg-card rounded-2xl p-6 shadow-soft hover:shadow-card transition-shadow">
-                        <span className="text-primary font-bold text-lg">{milestone.year}</span>
-                        <h3 className="font-display text-xl font-semibold text-foreground mt-2 mb-2">
-                          {milestone.title}
-                        </h3>
-                        <p className="text-muted-foreground">{milestone.description}</p>
-                      </div>
-                    </div>
-
-                    {/* Dot */}
-                    <div className="absolute left-8 md:left-1/2 w-4 h-4 rounded-full bg-primary border-4 border-background md:-translate-x-1/2 shadow-glow" />
-
-                    {/* Spacer for desktop */}
-                    <div className="hidden md:block flex-1" />
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
           </div>
         </div>
       </section>

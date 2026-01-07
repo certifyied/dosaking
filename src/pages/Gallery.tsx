@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -132,6 +133,13 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Gallery – Best South Indian Restaurant in Ottawa, Canada</title>
+        <meta 
+          name="description" 
+          content="Explore the gallery of the best South Indian restaurant in Ottawa, Canada. See our authentic dosas, curries, and warm dining experience at Dosa King Palace." 
+        />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section */}
