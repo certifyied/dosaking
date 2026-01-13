@@ -41,7 +41,7 @@ const featuredItems = [
 
 const stats = [
   { icon: Users, value: "50K+", label: "Happy Customers" },
-  { icon: Star, value: "4.9", label: "Average Rating" },
+  { icon: Star, value: "4.7", label: "Average Rating" },
   { icon: Award, value: "15+", label: "Awards Won" },
 ];
 
@@ -98,19 +98,8 @@ const Index = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight"
           >
-            Crispy. Golden.
-            <br />
-            <span className="text-gradient">Legendary Dosas.</span>
+            The Best South Indian Restaurant in Ottawa
           </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-8"
-          >
-            Experience the art of traditional dosa making, perfected over three decades
-          </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -178,7 +167,7 @@ const Index = () => {
                 Featured <span className="text-gradient">Dosas</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Handcrafted with love, using traditional recipes passed down through generations
+                Made with love using generations-old recipes, delivering the taste you expect from the best South Indian restaurant in Ottawa.
               </p>
             </div>
           </ScrollReveal>
@@ -223,15 +212,10 @@ const Index = () => {
                   Our Story
                 </span>
                 <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-                  A Legacy of <span className="text-gradient">Taste</span>
+                  Where Every Dosa Tells a Story of Tradition, Flavor & <span className="text-gradient">Love</span>
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                Since 2023, Dosa King has been serving authentic South Indian cuisine with a passion for perfection. What started as a small family kitchen has grown into a beloved destination for dosa lovers across the city.
-
-                </p>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  Every dosa we serve carries the warmth of tradition, the crispness of expertise, 
-                  and the love of three generations of dosa masters.
+                  Craving authentic South Indian flavors? You're in the right place! At Dosa King, we delight you with crispy dosas, fragrant biryanis, and wholesome homestyle comfort food that takes your taste buds straight to Chennai — right here on Holland Avenue. Experience why we're known as the best South Indian restaurant in Ottawa for genuine taste and unforgettable meals.
                 </p>
                 <Button variant="hero" size="lg" asChild>
                   <Link to="/about">Read Our Story</Link>
@@ -252,7 +236,7 @@ const Index = () => {
                 Ready to Experience the <span className="text-gradient">Best Dosa</span> in Town?
               </h2>
               <p className="text-muted-foreground text-lg mb-8">
-                Visit us today or order online for a taste of authentic South Indian tradition
+                Visit us today or order online to experience authentic South Indian tradition at the best South Indian restaurant in Ottawa
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="hero" size="xl" asChild>
