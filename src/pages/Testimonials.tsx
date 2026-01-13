@@ -6,57 +6,75 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
-// Sample testimonial data - can be moved to a separate file or API later
+// Testimonial data
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    designation: "Food Blogger",
-    company: "Ottawa Foodie",
-    message: "Dosa King has the most authentic South Indian food I've tasted outside of India. The dosas are perfectly crispy, and the sambar is absolutely divine. A must-visit for anyone craving authentic flavors!",
+    name: "Sneha Patel",
+    message: "Absolutely delicious and authentic South Indian food in Ottawa. Crispy dosas, flavorful chutneys, and excellent sambar. Curries, biriyani, and drinks were equally impressive. Friendly staff and a warm, welcoming atmosphere make this a must-visit.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&q=80",
+    mustTry: "Chicken 65 Biriyani, Ghee Dosa, Chicken Tikka Dosa",
+    ratings: "Food 5/5 | Service 5/5 | Atmosphere 5/5",
   },
   {
     id: 2,
-    name: "Michael Chen",
-    designation: "Regular Customer",
-    message: "I've been coming here for months, and the quality never disappoints. The staff is friendly, the food is consistently excellent, and the prices are very reasonable. My go-to place for weekend breakfast!",
+    name: "M B",
+    message: "Hands down the best Chicken 65 ever. Extra spicy, juicy, and packed with bold flavor—nothing else comes close. Butter paneer masala is also top-tier. A dream spot for Indian food lovers.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&q=80",
   },
   {
     id: 3,
-    name: "Priya Sharma",
-    designation: "Local Resident",
-    message: "As someone from South India, I can vouch for the authenticity of the food here. The masala dosa reminds me of home. The restaurant has become a regular spot for our family gatherings.",
+    name: "Tyson Avery",
+    message: "Fantastic dining experience! Perfectly crisp dosas served with delicious chutneys and sambar. The noodles were spicy, fresh, and full of flavor. Calm ambiance and great service made the meal even better.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&q=80",
+    ratings: "Food 5/5 | Service 5/5 | Atmosphere 5/5",
   },
   {
     id: 4,
-    name: "David Thompson",
-    designation: "Restaurant Critic",
-    company: "Ottawa Dining Guide",
-    message: "Dosa King stands out for its commitment to traditional cooking methods. The attention to detail in every dish is remarkable. The ghee roast dosa is particularly outstanding!",
+    name: "Atif Mehmood",
+    message: "One of the best dosas in Ottawa—crispy, flavorful, and perfectly cooked. Chicken 65 biriyani was generous and delicious. Finished with authentic Indian coffee that tasted just like home.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&q=80",
+    recommended: "Mysore Masala Dosa, Chicken 65 Biriyani",
   },
   {
     id: 5,
-    name: "Emily Rodriguez",
-    designation: "Food Enthusiast",
-    message: "I tried South Indian food for the first time here, and I'm hooked! The variety of dosas is impressive, and each one is better than the last. The chutneys are a perfect complement to the dosas.",
+    name: "Indrani Das",
+    message: "Fresh, crispy dosas and delicious food overall. Tried Chicken Kothu Porotta for the first time and loved it. Quick service and a calm environment. Highly recommended for food lovers.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&q=80",
+    ratings: "Food 5/5 | Service 5/5 | Atmosphere 4/5",
   },
   {
     id: 6,
-    name: "Rajesh Kumar",
-    designation: "Business Owner",
-    message: "The consistency in quality and service is what keeps me coming back. Whether it's a quick breakfast or a family dinner, Dosa King always delivers. Highly recommended!",
+    name: "Gurpreet Khokhar",
+    message: "Absolutely loved the authentic flavors! Ghee masala dosa and idli-vada were outstanding. Special thanks to Mishal for the warm and attentive service. Comforting South Indian food done right.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&q=80",
+  },
+  {
+    id: 7,
+    name: "Aiswarya Madhu",
+    message: "The best South Indian restaurant I've visited in Ottawa. Kothu porotta and chicken tikka dosa were mouth-watering. Generous portions and excellent service made the experience even better.",
+    rating: 5,
+    recommended: "Chicken 65 Biriyani",
+  },
+  {
+    id: 8,
+    name: "Kirti Gupta",
+    message: "Loved the vibe and the food! The Chicken Porotta and Chicken Biriyani combo is unforgettable. Easily the best South Indian spot I've tried so far.",
+    rating: 5,
+  },
+  {
+    id: 9,
+    name: "Anjitha T Raj",
+    message: "Amazing experience with delicious food and friendly staff. Mysore Podi Masala Dosa, Ghee Podi Idly, and Medu Vada were all perfect. Will definitely be back again!",
+    rating: 5,
+    recommended: "Masala Dosa, Mysore Masala Dosa, Podi Idly",
+  },
+  {
+    id: 10,
+    name: "Adithyan K. O. P",
+    message: "Warm, welcoming service and outstanding food quality. The mutton biryani was aromatic, flavorful, and generously portioned. Excellent value for authentic South Indian flavors.",
+    rating: 5,
+    ratings: "Food 5/5 | Service 5/5 | Atmosphere 5/5",
   },
 ];
 
@@ -110,8 +128,13 @@ const Testimonials = () => {
                     <Quote size={48} className="text-primary" />
                   </div>
 
+                  {/* Customer Name */}
+                  <h3 className="font-display font-semibold text-foreground mb-4 relative z-10">
+                    {testimonial.name}
+                  </h3>
+
                   {/* Rating */}
-                  <div className="flex gap-1 mb-4">
+                  <div className="flex gap-1 mb-4 relative z-10">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star
                         key={i}
@@ -122,30 +145,30 @@ const Testimonials = () => {
                   </div>
 
                   {/* Testimonial Message */}
-                  <p className="text-muted-foreground leading-relaxed mb-6 flex-grow relative z-10">
-                    "{testimonial.message}"
+                  <p className="text-muted-foreground leading-relaxed mb-4 flex-grow relative z-10">
+                    {testimonial.message}
                   </p>
 
-                  {/* Customer Info */}
-                  <div className="flex items-center gap-4 pt-4 border-t border-border">
-                    <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
-                      <img
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        className="w-full h-full object-cover"
-                        loading="lazy"
-                      />
+                  {/* Supporting Lines */}
+                  {(testimonial.mustTry || testimonial.recommended || testimonial.ratings) && (
+                    <div className="space-y-2 pt-4 border-t border-border relative z-10">
+                      {testimonial.mustTry && (
+                        <p className="text-sm text-foreground">
+                          <span className="font-semibold">Must Try:</span> {testimonial.mustTry}
+                        </p>
+                      )}
+                      {testimonial.recommended && (
+                        <p className="text-sm text-foreground">
+                          <span className="font-semibold">Recommended:</span> {testimonial.recommended}
+                        </p>
+                      )}
+                      {testimonial.ratings && (
+                        <p className="text-sm text-foreground">
+                          <span className="font-semibold">Ratings:</span> {testimonial.ratings}
+                        </p>
+                      )}
                     </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="font-display font-semibold text-foreground">
-                        {testimonial.name}
-                      </h3>
-                      <p className="text-sm text-muted-foreground">
-                        {testimonial.designation}
-                        {testimonial.company && ` • ${testimonial.company}`}
-                      </p>
-                    </div>
-                  </div>
+                  )}
 
                   {/* Hover Glow Effect */}
                   <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none ring-1 ring-primary/30" />
