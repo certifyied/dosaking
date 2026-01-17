@@ -8,7 +8,7 @@ import { MenuCard } from "@/components/MenuCard";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
-import heroDosa from "@/assets/hero-dosa.jpg";
+import heroDosa from "@/assets/dosa_banner.jpg";
 import plainDosa from "@/assets/new_plain_dosa.jpg";
 import masalaDosa from "@/assets/new_masala_dosa.jpg";
 import gheeDosa from "@/assets/new_ghee_roast.jpg";
