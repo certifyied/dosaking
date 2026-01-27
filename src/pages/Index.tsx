@@ -7,6 +7,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { MenuCard } from "@/components/MenuCard";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { StructuredData } from "@/components/StructuredData";
 
 import heroDosa from "@/assets/dosa_banner.jpg";
 import plainDosa from "@/assets/new_plain_dosa.jpg";
@@ -59,6 +60,7 @@ const Index = () => {
           content="Enjoy authentic South Indian flavors at the best South Indian restaurant in Canada, Ottawa. Dosa King Palace serves crispy dosas, rich curries, and traditional tastes." 
         />
       </Helmet>
+      <StructuredData type="both" />
       <Navbar />
 
       {/* Hero Section */}

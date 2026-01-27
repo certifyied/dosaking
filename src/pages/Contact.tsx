@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
+import { StructuredData } from "@/components/StructuredData";
 
 const contactInfo = [
   {
@@ -71,6 +72,7 @@ const Contact = () => {
           content="Contact the best South Indian restaurant in Ottawa, Canada. Get in touch with Dosa King Palace for reservations, catering services, location details, and inquiries." 
         />
       </Helmet>
+      <StructuredData type="restaurant" />
       <Navbar />
 
       {/* Hero Section */}

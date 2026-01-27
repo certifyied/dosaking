@@ -6,6 +6,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
+import { StructuredData } from "@/components/StructuredData";
 
 import aboutFood from "@/assets/about-food.jpg";
 import galleryChef from "@/assets/gallery-chef.jpg";
@@ -43,6 +44,7 @@ const About = () => {
           content="Dosa King Palace is the best South Indian restaurant in Canada, Ottawa, offering authentic dosas, idlis, sambar, and delicious South Indian cuisine." 
         />
       </Helmet>
+      <StructuredData type="organization" />
       <Navbar />
 
       {/* Hero Section */}
