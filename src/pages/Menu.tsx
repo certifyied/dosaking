@@ -24,7 +24,7 @@ const Menu = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Explore Our Menu | Best South Indian Restaurant in Ottawa, Canada</title>
+        <title>Menu | Best South Indian Restaurant Ottawa, Canada</title>
         <meta 
           name="description" 
           content="Explore the delicious menu of the best South Indian restaurant in Ottawa, Canada. Dosa King Palace offers crispy dosas, idlis, curries, and authentic flavors." 

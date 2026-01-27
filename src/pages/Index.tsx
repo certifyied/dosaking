@@ -53,7 +53,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Best South Indian Restaurant in Canada, Ottawa | Dosa King Palace</title>
+        <title>Best South Indian Restaurant Ottawa, Canada | Dosa King Palace</title>
         <meta 
           name="description" 
           content="Enjoy authentic South Indian flavors at the best South Indian restaurant in Canada, Ottawa. Dosa King Palace serves crispy dosas, rich curries, and traditional tastes." 
