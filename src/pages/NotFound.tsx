@@ -1,19 +1,18 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 const NotFound = () => {
   const location = useLocation();
-  const navigate = useNavigate();
 
   useEffect(() => {
+    // Log 404 attempts for monitoring
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
-    // Automatically redirect to homepage
-    navigate("/", { replace: true });
-  }, [location.pathname, navigate]);
+  }, [location.pathname]);
 
-  // Return null or minimal content since redirect happens immediately
-  // This prevents any flash of 404 content
-  return null;
+  // Immediately redirect to homepage using Navigate component
+  // This is more efficient than useEffect + navigate as it's declarative
+  // replace: true prevents adding to browser history
+  return <Navigate to="/" replace />;
 };
 
 export default NotFound;
