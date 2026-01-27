@@ -24,8 +24,8 @@ export const StructuredData = ({ type = "both" }: StructuredDataProps) => {
       "streetAddress": "93 Holland Avenue",
       "addressLocality": "Ottawa",
       "addressRegion": "Ontario",
-      "addressCountry": "CA",
-      "postalCode": ""
+      "postalCode": "K1Y 0X1",
+      "addressCountry": "CA"
     },
     "geo": {
       "@type": "GeoCoordinates",
@@ -83,7 +83,13 @@ export const StructuredData = ({ type = "both" }: StructuredDataProps) => {
       "streetAddress": "93 Holland Avenue",
       "addressLocality": "Ottawa",
       "addressRegion": "Ontario",
+      "postalCode": "K1Y 0X1",
       "addressCountry": "CA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "45.4112",
+      "longitude": "-75.6981"
     },
     "contactPoint": {
       "@type": "ContactPoint",

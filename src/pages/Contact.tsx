@@ -9,16 +9,30 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { StructuredData } from "@/components/StructuredData";
 
-const contactInfo = [
+interface ContactInfo {
+  icon: React.ComponentType<{ size?: number; className?: string }>;
+  title: string;
+  details: string[];
+  isAddress?: boolean;
+  isPhone?: boolean;
+  isEmail?: boolean;
+  phone?: string;
+  email?: string;
+}
+
+const contactInfo: ContactInfo[] = [
   {
     icon: MapPin,
     title: "Visit Us",
-    details: ["93 Holland Avenue, Ottawa, Ontario, CANADA"],
+    details: ["93 Holland Avenue", "Ottawa, Ontario K1Y 0X1", "Canada"],
+    isAddress: true,
   },
   {
     icon: Phone,
     title: "Call Us",
     details: ["(613) 790-8316"],
+    phone: "+16137908316",
+    isPhone: true,
   },
   {
     icon: Clock,
@@ -29,6 +43,8 @@ const contactInfo = [
     icon: Mail,
     title: "Email Us",
     details: ["info@dosaking.com"],
+    email: "info@dosaking.com",
+    isEmail: true,
   },
 ];
 
@@ -114,11 +130,35 @@ const Contact = () => {
                   <h3 className="font-display text-lg font-semibold text-foreground mb-3">
                     {info.title}
                   </h3>
-                  {info.details.map((detail, i) => (
-                    <p key={i} className="text-muted-foreground text-sm">
-                      {detail}
-                    </p>
-                  ))}
+                  {info.isAddress ? (
+                    <address className="not-italic text-muted-foreground text-sm space-y-1">
+                      {info.details.map((detail, i) => (
+                        <div key={i}>{detail}</div>
+                      ))}
+                    </address>
+                  ) : info.isPhone && info.phone ? (
+                    <a 
+                      href={`tel:${info.phone}`}
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors block"
+                      aria-label={`Call Dosa King Palace at ${info.details[0]}`}
+                    >
+                      {info.details[0]}
+                    </a>
+                  ) : info.isEmail && info.email ? (
+                    <a 
+                      href={`mailto:${info.email}`}
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors block"
+                      aria-label={`Email Dosa King Palace at ${info.email}`}
+                    >
+                      {info.details[0]}
+                    </a>
+                  ) : (
+                    info.details.map((detail, i) => (
+                      <p key={i} className="text-muted-foreground text-sm">
+                        {detail}
+                      </p>
+                    ))
+                  )}
                 </motion.div>
               </ScrollReveal>
             ))}

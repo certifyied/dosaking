@@ -54,25 +54,33 @@ export const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="font-display text-lg font-semibold text-foreground mb-6">Contact Us</h4>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
+            <address className="not-italic space-y-4">
+              <div className="flex items-start gap-3">
                 <MapPin size={20} className="text-primary mt-1 shrink-0" />
-                <span className="text-muted-foreground">
-                93 Holland Avenue, Ottawa,<br />
-                Ontario, CANADA
-                </span>
-              </li>
-              <li className="flex items-center gap-3">
+                <div className="text-muted-foreground">
+                  <div>93 Holland Avenue</div>
+                  <div>Ottawa, Ontario K1Y 0X1</div>
+                  <div>Canada</div>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
                 <Phone size={20} className="text-primary shrink-0" />
-                <span className="text-muted-foreground">(613) 790-8316</span>
-              </li>
-              <li className="flex items-start gap-3">
+                <a 
+                  href="tel:+16137908316" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Call Dosa King Palace at (613) 790-8316"
+                >
+                  (613) 790-8316
+                </a>
+              </div>
+              <div className="flex items-start gap-3">
                 <Clock size={20} className="text-primary mt-1 shrink-0" />
-                <span className="text-muted-foreground">
-                  Mon - Sun: 7:00 AM - 10:00 PM
-                </span>
-              </li>
-            </ul>
+                <div className="text-muted-foreground">
+                  <div>Mon - Fri: 7:00 AM - 10:00 PM</div>
+                  <div>Sat - Sun: 6:00 AM - 11:00 PM</div>
+                </div>
+              </div>
+            </address>
           </div>
 
         </div>
