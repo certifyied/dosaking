@@ -113,7 +113,15 @@ const Index = () => {
               <Link to="/menu">View Menu</Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <Link to="/contact">Order Now</Link>
+              <a
+                href="https://order.online/store/25955986?pickup=true&redirected=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Order food from Dosa King online"
+                className="cursor-pointer"
+              >
+                Order Now
+              </a>
             </Button>
           </motion.div>
         </motion.div>
@@ -242,7 +250,15 @@ const Index = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="hero" size="xl" asChild>
-                  <Link to="/contact">Order Now</Link>
+                  <a
+                    href="https://order.online/store/25955986?pickup=true&redirected=true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Order food from Dosa King online"
+                    className="cursor-pointer"
+                  >
+                    Order Now
+                  </a>
                 </Button>
                 <Button variant="heroOutline" size="xl" asChild>
                   <Link to="/gallery">View Gallery</Link>

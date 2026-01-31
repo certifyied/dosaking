@@ -40,8 +40,8 @@ const contactInfo: ContactInfo[] = [
   {
     icon: Mail,
     title: "Email Us",
-    details: ["info@dosaking.com"],
-    email: "info@dosaking.com",
+    details: ["dosakingpalace@gmail.com"],
+    email: "dosakingpalace@gmail.com",
     isEmail: true,
   },
 ];

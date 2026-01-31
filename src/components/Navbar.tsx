@@ -82,7 +82,15 @@ export const Navbar = () => {
             {/* CTA Button */}
             <div className="hidden lg:block">
               <Button variant="hero" size="lg" asChild>
-                <Link to="/contact">Order Now</Link>
+                <a
+                  href="https://order.online/store/25955986?pickup=true&redirected=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Order food from Dosa King online"
+                  className="cursor-pointer"
+                >
+                  Order Now
+                </a>
               </Button>
             </div>
 
@@ -146,7 +154,15 @@ export const Navbar = () => {
                   className="pt-4"
                 >
                   <Button variant="hero" size="lg" className="w-full" asChild>
-                    <Link to="/contact">Order Now</Link>
+                    <a
+                      href="https://order.online/store/25955986?pickup=true&redirected=true"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Order food from Dosa King online"
+                      className="cursor-pointer"
+                    >
+                      Order Now
+                    </a>
                   </Button>
                 </motion.div>
               </div>
