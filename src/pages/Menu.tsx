@@ -1,26 +1,12 @@
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { Button } from "@/components/ui/button";
 import menuPdf from "@/assets/dosa king menu .pdf";
 
 const Menu = () => {
-  const [loading, setLoading] = useState<boolean>(true);
-
-  const handleIframeLoad = () => {
-    setLoading(false);
-  };
-
-  useEffect(() => {
-    // Fallback: hide loading after reasonable time even if iframe doesn't load
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -55,34 +41,26 @@ const Menu = () => {
         </div>
       </section>
 
-      {/* PDF Display Section - Full UI visible */}
+      {/* Menu CTA Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <ScrollReveal>
-            <div className="max-w-6xl mx-auto">
-              {loading && (
-                <div className="flex items-center justify-center py-20">
-                  <div className="text-center">
-                    <div className="inline-block animate-spin rounded-full h-12 w-12 border-4 border-primary border-t-transparent mb-4"></div>
-                    <p className="text-muted-foreground">Loading menu...</p>
-                  </div>
-                </div>
-              )}
-
-              {!loading && (
-                <div className="bg-card rounded-2xl shadow-soft p-4 md:p-8 border border-border">
-                  <iframe
-                    src={menuPdf}
-                    className="w-full rounded-lg border border-border"
-                    title="Menu PDF"
-                    style={{
-                      minHeight: "800px",
-                      height: "calc(100vh - 400px)"
-                    }}
-                    onLoad={handleIframeLoad}
-                  />
-                </div>
-              )}
+            <div className="max-w-6xl mx-auto flex justify-center">
+              <Button
+                variant="hero"
+                size="xl"
+                asChild
+                className="cursor-pointer"
+              >
+                <a
+                  href={menuPdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View Dosa King Menu PDF"
+                >
+                  View Our Menu
+                </a>
+              </Button>
             </div>
           </ScrollReveal>
         </div>
