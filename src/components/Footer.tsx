@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Clock, Instagram } from "lucide-react";
+import { MapPin, Phone, Clock, Instagram, Facebook, Linkedin } from "lucide-react"; // added Facebook and Linkedin
 import dosakingLogo from "@/assets/dosaking_logo.png";
 
 export const Footer = () => {
@@ -22,6 +22,7 @@ export const Footer = () => {
               Crafting the perfect dosa since 1995. Experience the authentic taste of South India.
             </p>
             <div className="flex gap-4">
+              {/* Instagram */}
               <motion.a
                 href="https://www.instagram.com/dosa_king_ottawa?igsh=YmkwOXFyYWtrZW9o"
                 target="_blank"
@@ -30,6 +31,28 @@ export const Footer = () => {
                 className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 <Instagram size={18} />
+              </motion.a>
+
+              {/* Facebook */}
+              <motion.a
+                href="https://www.facebook.com/dosa_king_ottawa"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1, y: -2 }}
+                className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                <Facebook size={18} />
+              </motion.a>
+
+              {/* LinkedIn */}
+              <motion.a
+                href="https://www.linkedin.com/company/dosa-king-ottawa"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1, y: -2 }}
+                className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                <Linkedin size={18} />
               </motion.a>
             </div>
           </div>
@@ -65,8 +88,8 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={20} className="text-primary shrink-0" />
-                <a 
-                  href="tel:+16137908316" 
+                <a
+                  href="tel:+16137908316"
                   className="text-muted-foreground hover:text-primary transition-colors"
                   aria-label="Call Dosa King Palace at (613) 790-8316"
                 >

@@ -257,3 +257,16 @@
     @apply w-full;
   }
 }
+
+
+
+/* styles.css */
+.noscript-container {
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.fallback-content {
+  display: none;
+}

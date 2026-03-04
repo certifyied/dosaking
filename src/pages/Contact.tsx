@@ -35,7 +35,7 @@ const contactInfo: ContactInfo[] = [
   {
     icon: Clock,
     title: "Opening Hours",
-    details: ["Mon - Thu: 11:00 AM - 10:00 PM", "Fri - Sat: 11:00 AM - 11:00 PM" , "Sun: 11:00 AM - 10:00 PM"],
+    details: ["Mon - Thu: 11:00 AM - 10:00 PM", "Fri - Sat: 11:00 AM - 11:00 PM", "Sun: 11:00 AM - 10:00 PM"],
   },
   {
     icon: Mail,
@@ -51,9 +51,9 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Contact Us – Best South Indian Restaurant in Ottawa, Canada</title>
-        <meta 
-          name="description" 
-          content="Contact the best South Indian restaurant in Ottawa, Canada. Get in touch with Dosa King Palace for reservations, catering services, location details, and inquiries." 
+        <meta
+          name="description"
+          content="Contact the best South Indian restaurant in Ottawa, Canada. Get in touch with Dosa King Palace for reservations, catering services, location details, and inquiries."
         />
       </Helmet>
       <StructuredData type="restaurant" />
@@ -105,7 +105,7 @@ const Contact = () => {
                       ))}
                     </address>
                   ) : info.isPhone && info.phone ? (
-                    <a 
+                    <a
                       href={`tel:${info.phone}`}
                       className="text-muted-foreground text-sm hover:text-primary transition-colors block"
                       aria-label={`Call Dosa King Palace at ${info.details[0]}`}
@@ -113,9 +113,13 @@ const Contact = () => {
                       {info.details[0]}
                     </a>
                   ) : info.isEmail && info.email ? (
-                    <a 
-                      href={`mailto:${info.email}`}
+                    <a
+                      href="#"
                       className="text-muted-foreground text-sm hover:text-primary transition-colors block"
+                      onClick={(e) => {
+                        e.preventDefault(); // Prevent jump
+                        window.location.href = `mailto:${info.email}`;
+                      }}
                       aria-label={`Email Dosa King Palace at ${info.email}`}
                     >
                       {info.details[0]}
@@ -166,7 +170,7 @@ const Contact = () => {
               Ready to Taste the <span className="text-gradient">Legend</span>?
             </h2>
             <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-              Visit us today and experience the authentic taste of South India. 
+              Visit us today and experience the authentic taste of South India.
               We're waiting to serve you our legendary dosas!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
