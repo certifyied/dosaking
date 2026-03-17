@@ -40,6 +40,13 @@ import blog20 from "@/assets/egyptian-traditional-food-1200x720.jpg";
 import blog21 from "@/assets/India-for-Beginners-custom-tours-8.jpg";
 import blog22 from "@/assets/how-to-make-dosa-1957716-hero-01-e0f8464649aa4be4b0be56f08698f4a4.jpg";
 import blog23 from "@/assets/jiWvUC7AWg5unUmlo4NBrF3nybnE0cJewsVfkQiy.jpg";
+import blog24 from "@/assets/Plain-Dosa.webp";
+import blog25 from "@/assets/82571270.avif";
+import blog26 from "@/assets/2017a19b5445848da28207517f466e1d.jpg";
+import blog27 from "@/assets/delicious-indian-veg-food.jpg";
+import blog28 from "@/assets/photo-1615366105533-5b8f3255ea5d.avif";
+import blog29 from "@/assets/61879742.avif";
+import blog30 from "@/assets/ai-generated-a-dosa-also-called-dosai-dosey-or-dosha-is-a-thin-paratha-in-south-indian-cuisine-photo.jpg";
 
 // Sample blog data - can be moved to a separate file or API later
 const blogPosts = [
@@ -130,7 +137,7 @@ From soft idlis and crispy medu vadas to lemon rice and tamarind rice, every dis
     excerpt: "Discover why Dosa King Palace is the best South Indian restaurant in Ottawa, featuring authentic flavors, an extensive menu, quality ingredients, and a welcoming dining experience that keeps guests coming back.",
     image: blog12,
     date: "2024-04-17",
-    category: "Culture",
+    category: "Our Story",
     content: `Great food becomes even better when paired with warm hospitality. Dosa King offers a comfortable and inviting atmosphere where families, students, professionals, and visitors can gather and enjoy a memorable meal.
 Whether dining in, ordering takeout, or planning a family dinner, guests appreciate the attentive service and welcoming environment.`
   },
@@ -255,7 +262,7 @@ At Dosa King, we take pride in using traditional fermentation methods that maxim
     excerpt: "Dive into the world of South Indian spice blends - from sambar powder to rasam powder, discover how these aromatic mixtures create authentic flavors.",
     image: blog4,
     date: "2023-12-28",
-    category: "Cooking Tips",
+    category: "Culture",
     content: `Spice blends are the soul of South Indian cuisine. These carefully crafted mixtures of roasted and ground spices create the complex, layered flavors that define dishes like sambar, rasam, and various curries.
 
 Sambar powder is perhaps the most essential spice blend in South Indian cooking. It typically includes coriander seeds, red chilies, fenugreek seeds, curry leaves, and asafoetida. Each ingredient is carefully roasted to bring out its unique flavor before being ground together. The result is a warm, aromatic powder that forms the base of sambar, a tangy lentil stew that's a staple in South Indian meals.
@@ -320,7 +327,7 @@ At Dosa King, we serve a variety of chutneys with every dosa, allowing you to mi
     excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
     image: blog16,
     date: "2023-12-13",
-    category: "Cooking Tips",
+    category: "Our Story",
     content: `South Indian cuisine is known for its balance of flavors, aromatic spices, and wholesome ingredients. Unlike some other cuisines that rely heavily on rich gravies or oils, South Indian dishes often focus on simplicity and nutrition. Many recipes are prepared using rice, lentils, fresh vegetables, and carefully selected spices that enhance both taste and health benefits.
 Another defining feature of South Indian cooking is fermentation. Foods like dosa and idli are made from fermented rice and lentil batter, which not only creates a distinctive flavor but also improves digestibility. This traditional cooking method has been practiced for generations and remains an important part of South Indian culinary heritage.`
   },
@@ -329,8 +336,8 @@ Another defining feature of South Indian cooking is fermentation. Foods like dos
     title: "Dosa – The Star of the Menu",
     excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
     image: blog17,
-    date: "2023-11-13",
-    category: "Cooking Tips",
+    date: "2023-12-13",
+    category: "Culture",
     content: `One of the most famous dishes in South Indian cuisine is the dosa. This thin, crispy crepe is made from a fermented batter and cooked on a hot griddle until golden brown. At Dosa King, dosas are served fresh and perfectly crisp, making them a favorite among customers.
 The restaurant offers several varieties of dosa, each with its own unique flavor. The classic plain dosa is simple yet satisfying, while the popular masala dosa is filled with a spiced potato mixture that adds warmth and depth to the dish. Served alongside coconut chutney and sambar, dosas provide a complete and delicious dining experience.`
   },
@@ -339,7 +346,7 @@ The restaurant offers several varieties of dosa, each with its own unique flavor
     title: "Traditional Dishes That Reflect Authentic Flavors",
     excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
     image: blog18,
-    date: "2023-10-13",
+    date: "2023-12-12",
     category: "Culture",
     content: `While dosas are the highlight for many visitors, South Indian cuisine offers much more. Soft and fluffy idlis, which are steamed rice cakes, are a popular breakfast dish that pairs perfectly with chutney and sambar. Crispy vadas, made from seasoned lentil batter and deep-fried until golden, add a crunchy texture to the meal.
 They are simple, nourishing, and full of authentic flavor. At Dosa King, each dish is prepared with attention to detail, preserving the traditional recipes that have been passed down through generations.`
@@ -349,7 +356,7 @@ They are simple, nourishing, and full of authentic flavor. At Dosa King, each di
     title: "A Dining Experience That Feels Welcoming",
     excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
     image: blog19,
-    date: "2023-09-13",
+    date: "2023-12-11",
     category: "Cooking Tips",
     content: `Great food is only part of what makes a restaurant memorable. The atmosphere and overall dining experience also play an important role. Many visitors appreciate the welcoming environment at Dosa King, where guests can relax and enjoy their meals in a comfortable setting.
 Whether you are dining with family, meeting friends, or exploring new cuisines on your own, the restaurant provides a space where everyone can enjoy authentic South Indian flavors. The friendly atmosphere and dedication to quality food make it a popular choice for people looking to try something different in Ottawa.`
@@ -359,8 +366,8 @@ Whether you are dining with family, meeting friends, or exploring new cuisines o
     title: "Healthy and Flavorful Choices",
     excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
     image: blog20,
-    date: "2023-08-13",
-    category: "Cooking Tips",
+    date: "2023-12-10",
+    category: "Our Story",
     content: `Another reason South Indian cuisine has gained popularity worldwide is its nutritional balance. Many dishes are naturally vegetarian and made with wholesome ingredients such as lentils, rice, and vegetables. These ingredients provide essential nutrients while still delivering rich and satisfying flavors.
 Because of this balance between taste and health, South Indian food appeals to a wide range of diners. It offers a flavorful alternative for those looking for meals that are both delicious and nourishing.`
   },
@@ -369,8 +376,8 @@ Because of this balance between taste and health, South Indian food appeals to a
     title: "Healthy and Flavorful Choices",
     excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
     image: blog21,
-    date: "2023-07-13",
-    category: "Cooking Tips",
+    date: "2023-12-09",
+    category: "Culture",
     content: `Another reason South Indian cuisine has gained popularity worldwide is its nutritional balance. Many dishes are naturally vegetarian and made with wholesome ingredients such as lentils, rice, and vegetables. These ingredients provide essential nutrients while still delivering rich and satisfying flavors.
 Because of this balance between taste and health, South Indian food appeals to a wide range of diners. It offers a flavorful alternative for those looking for meals that are both delicious and nourishing.`
   },
@@ -379,7 +386,7 @@ Because of this balance between taste and health, South Indian food appeals to a
     title: "Exploring Ottawa’s Diverse Food Scene",
     excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
     image: blog22,
-    date: "2023-06-13",
+    date: "2023-12-08",
     category: "Culture",
     content: `Ottawa’s dining culture continues to grow as new restaurants and cuisines become part of the city’s culinary identity. Exploring different foods not only introduces new flavors but also offers insight into different cultures and traditions.
 For anyone interested in experiencing authentic South Indian cuisine, visiting Dosa King can be a memorable part of that journey. The restaurant brings traditional recipes, fresh ingredients, and warm hospitality together to create an enjoyable dining experience.`
@@ -389,11 +396,81 @@ For anyone interested in experiencing authentic South Indian cuisine, visiting D
     title: "Why Dosa King Stands Out",
     excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
     image: blog23,
-    date: "2023-05-13",
+    date: "2023-12-07",
     category: "Cooking Tips",
     content: `What makes Dosa King special is its dedication to authenticity and quality. Each dish reflects the rich culinary heritage of South India while adapting to the tastes of a diverse community. 
 For residents and visitors exploring the food scene in Ottawa, discovering new cuisines can be an exciting adventure. If you are searching for the Best South Indian Restaurant in Ottawa, Dosa King offers an experience that combines authentic flavors, cultural tradition, and a welcoming atmosphere.
 Whether you are a longtime fan of South Indian cuisine or trying it for the first time, a visit to Dosa King is sure to leave a lasting impression.`
+  },
+  {
+    id: 24,
+    title: "Best South Indian Restaurant in Ottawa: Discover Authentic Flavors at Dosa King",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog24,
+    date: "2023-12-06",
+    category: "Our Story",
+    content: `Food is more than just nourishment—it is a way to explore culture, tradition, and history. In a multicultural city like Ottawa, residents and visitors enjoy a wide variety of international cuisines that reflect the city’s diversity. Among these culinary experiences, South Indian cuisine has gained significant attention for its vibrant flavors and wholesome ingredients. For many food lovers searching for the Best South Indian Restaurant in Ottawa, one name that often comes up is Dosa King Ottawa.`
+  },
+  {
+    id: 25,
+    title: "The Growing Popularity of South Indian Cuisine",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog25,
+    date: "2023-12-05",
+    category: "Cooking Tips",
+    content: `South Indian food is known for its unique balance of flavors, spices, and textures. Unlike some cuisines that rely heavily on rich gravies, South Indian dishes often highlight natural ingredients such as rice, lentils, vegetables, and aromatic spices. These ingredients come together to create meals that are both satisfying and nutritious.
+Another distinctive aspect of South Indian cooking is the use of fermentation. Many traditional dishes, including dosa and idli, are prepared using fermented rice and lentil batter. This process not only enhances flavor but also improves digestion and nutritional value. Because of this combination of taste and health benefits, South Indian cuisine continues to gain popularity worldwide.`
+  },
+  {
+    id: 26,
+    title: "Dosa – The Iconic South Indian Delight",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog26,
+    date: "2023-12-04",
+    category: "Culture",
+    content: `One of the most famous dishes in South Indian cuisine is the dosa. This thin, crispy crepe is made from fermented batter and cooked on a hot griddle until it turns golden brown. At Dosa King, dosas are prepared fresh and served with traditional accompaniments that elevate the dining experience.
+Dosas are typically served with coconut chutney and sambar. Coconut chutney offers a mild, creamy flavor, while sambar—a lentil-based vegetable stew—adds warmth and depth to the meal. The combination of these flavors creates a perfectly balanced dish that many people find irresistible.The restaurant also offers several varieties of dosa, including the popular masala dosa filled with spiced potato mixture. Each version showcases the versatility and richness of South Indian cooking.`
+  },
+  {
+    id: 27,
+    title: "A Menu That Celebrates Tradition",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog27,
+    date: "2023-12-03",
+    category: "Cooking Tips",
+    content: `While dosas are a major highlight, South Indian cuisine includes many other beloved dishes. Soft, steamed idlis are a classic breakfast option that pairs beautifully with chutneys and sambar. Their light texture and mild flavor make them both comforting and satisfying.
+Crispy vadas are another favorite. These savory lentil fritters are deep-fried to perfection, offering a crunchy exterior and a soft interior. Together with chutneys and sambar, they create a delicious combination that reflects the essence of traditional South Indian food.
+At Dosa King, these dishes are prepared using authentic recipes that preserve the culinary heritage of South India. Every dish reflects the dedication to maintaining traditional flavors while providing a memorable dining experience.`
+  },
+  {
+    id: 28,
+    title: "A Warm and Welcoming Dining Atmosphere",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog28,
+    date: "2022-12-02",
+    category: "Culture",
+    content: `Great food is only one part of a great restaurant experience. The environment and hospitality also play an important role in making a visit enjoyable. Many guests appreciate the welcoming and relaxed atmosphere at Dosa King.
+Whether visiting with family, friends, or colleagues, diners can enjoy a comfortable setting while exploring authentic South Indian flavors. The restaurant offers a place where people can gather, share meals, and experience a cuisine that has been loved for generations.`
+  },
+  {
+    id: 29,
+    title: "Healthy and Flavorful Choices",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog29,
+    date: "2022-12-01",
+    category: "Cooking Tips",
+    content: `One of the reasons South Indian cuisine continues to attract food lovers is its focus on balance and nutrition. Many dishes are naturally vegetarian and prepared using wholesome ingredients like lentils, rice, and fresh vegetables.
+This emphasis on fresh ingredients and traditional cooking methods makes South Indian food both delicious and nourishing. For those looking for meals that combine flavor with health benefits, it is an excellent choice.`
+  },
+  {
+    id: 30,
+    title: "Experience the Best South Indian Restaurant in Ottawa",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog30,
+    date: "2022-12-01",
+    category: "Our Story",
+    content: `Exploring new cuisines is one of the joys of living in a culturally rich city like Ottawa. South Indian cuisine offers a unique blend of tradition, taste, and nutrition that appeals to a wide range of diners.For anyone searching for the Best South Indian Restaurant in Ottawa, Dosa King offers an authentic and memorable dining experience. From crispy dosas to comforting idlis and flavorful chutneys, every dish reflects the vibrant culinary traditions of South India.
+A visit to Dosa King is not just about enjoying a meal—it is about discovering a rich food culture and experiencing authentic flavors that make South Indian cuisine truly special.`
   },
 ];
 

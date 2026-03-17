@@ -9,7 +9,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { StructuredData } from "@/components/StructuredData";
 
-import heroDosa from "@/assets/dosa_banner.jpg";
+import heroDosa from "@/assets/dosa_banner.webp";
 import plainDosa from "@/assets/new_plain_dosa.jpg";
 import masalaDosa from "@/assets/new_masala_dosa.jpg";
 import gheeDosa from "@/assets/new_ghee_roast.jpg";
@@ -74,6 +74,7 @@ const Index = () => {
             src={heroDosa}
             alt="Crispy golden dosa with chutneys"
             className="w-full h-full object-cover"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
         </motion.div>
