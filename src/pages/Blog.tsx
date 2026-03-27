@@ -47,6 +47,14 @@ import blog27 from "@/assets/delicious-indian-veg-food.jpg";
 import blog28 from "@/assets/photo-1615366105533-5b8f3255ea5d.avif";
 import blog29 from "@/assets/61879742.avif";
 import blog30 from "@/assets/ai-generated-a-dosa-also-called-dosai-dosey-or-dosha-is-a-thin-paratha-in-south-indian-cuisine-photo.jpg";
+import blog31 from "@/assets/India-for-Beginners-custom-tours-8.jpg";
+import blog32 from "@/assets/cj7v468_dosa_625x300_18_January_23.jpg";
+import blog33 from "@/assets/dosa-600x400.jpg";
+import blog34 from "@/assets/PHOTO-2022-01-16-12-06-09.jpg";
+import blog35 from "@/assets/dosa.jpg";
+import blog36 from "@/assets/Dosa (1).jpg";
+import blog37 from "@/assets/Shot_21_-_Finished_dosas.webp";
+import blog38 from "@/assets/1400x919-Masala-dosa-filo-samosas-5e8ef544-dbe0-459a-babd-02527ba9ccbb-0-1400x919.jpg";
 
 // Sample blog data - can be moved to a separate file or API later
 const blogPosts = [
@@ -471,6 +479,87 @@ This emphasis on fresh ingredients and traditional cooking methods makes South I
     category: "Our Story",
     content: `Exploring new cuisines is one of the joys of living in a culturally rich city like Ottawa. South Indian cuisine offers a unique blend of tradition, taste, and nutrition that appeals to a wide range of diners.For anyone searching for the Best South Indian Restaurant in Ottawa, Dosa King offers an authentic and memorable dining experience. From crispy dosas to comforting idlis and flavorful chutneys, every dish reflects the vibrant culinary traditions of South India.
 A visit to Dosa King is not just about enjoying a meal—it is about discovering a rich food culture and experiencing authentic flavors that make South Indian cuisine truly special.`
+  },
+  {
+    id: 31,
+    title: "A Flavorful Journey to the Best South Indian Restaurant in Ottawa",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog31,
+    date: "2022-11-01",
+    category: "Our Story",
+    content: `When you think of comfort food that is both wholesome and rich in tradition, South Indian cuisine naturally comes to mind. The search for the best South Indian restaurant in Ottawa often leads food lovers to places that offer not just meals, but memorable experiences. Among these, Dosa King has carved a special place for itself by bringing authentic flavors, warm hospitality, and a true taste of South India to the heart of the city.`
+  },
+  {
+    id: 32,
+    title: "Bringing South Indian Traditions to Ottawa",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog32,
+    date: "2022-10-01",
+    category: "Our Story",
+    content: `South Indian cuisine is deeply rooted in culture, history, and everyday life. It is known for its simplicity, nutritional value, and incredible variety of flavors. At Dosa King, this tradition is preserved with care. The dishes are not just prepared—they are crafted with attention to detail, using traditional recipes passed down through generations.
+From the moment your food arrives at the table, you can sense the authenticity. The aroma of freshly prepared sambar, the crisp texture of a dosa, and the vibrant colors of chutneys create an experience that feels both comforting and exciting. It’s this commitment to tradition that makes Dosa King stand out as one of the most authentic South Indian dining spots in Ottawa.
+`
+  },
+  {
+    id: 33,
+    title: "The Magic of Dosas and More",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog33,
+    date: "2022-08-01",
+    category: "Culture",
+    content: `No South Indian meal is complete without dosas, and Dosa King truly excels in this area. Their dosas are thin, golden, and perfectly crisp, offering a delightful contrast to the flavorful fillings inside. Whether you prefer the classic masala dosa or want to try something new, there’s a wide variety to explore.
+But the menu doesn’t stop there. Soft and fluffy idlis, crispy medu vadas, and hearty uttapams are just a few of the highlights. Each dish is paired with freshly made chutneys and a bowl of hot, tangy sambar that ties everything together beautifully.
+For those who enjoy bold and rich flavors, the selection of South Indian curries provides a satisfying experience. These dishes showcase the perfect balance of spices, making every bite both flavorful and comforting.`
+  },
+  {
+    id: 34,
+    title: "A Welcoming Space for Everyone",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog34,
+    date: "2022-07-01",
+    category: "Our Story",
+    content: `What truly makes Dosa King one of the top South Indian restaurants in Ottawa is not just the food, but the overall atmosphere. The restaurant offers a cozy and inviting space where guests can relax and enjoy their meals without rush.
+Whether you’re planning a casual lunch, a family dinner, or a quick bite with friends, the setting adapts effortlessly to every occasion. The staff is friendly, attentive, and always ready to guide you through the menu, ensuring that even first-time visitors feel at ease.`
+  },
+  {
+    id: 35,
+    title: "A Haven for Vegetarian Food Lovers",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog35,
+    date: "2022-06-01",
+    category: "Cooking Tips",
+    content: `One of the biggest advantages of South Indian cuisine is its naturally vegetarian-friendly nature. Dosa King embraces this fully by offering a menu that caters beautifully to vegetarian preferences without compromising on taste or variety.
+Lentils, rice, vegetables, and aromatic spices come together to create dishes that are both nutritious and delicious. This makes it an ideal spot for anyone looking for healthy yet satisfying meal options in Ottawa.`
+  },
+  {
+    id: 36,
+    title: "More Than Just a Meal",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog36,
+    date: "2022-05-01",
+    category: "Culture",
+    content: `Dining at Dosa King is more than just eating—it’s about experiencing a culture. Every dish reflects the culinary heritage of South India, offering a glimpse into a tradition that values flavor, balance, and simplicity.
+The textures, aromas, and tastes work together to create a meal that feels complete and fulfilling. Whether you’re revisiting familiar flavors or trying South Indian cuisine for the first time, each visit brings something new to appreciate.`
+  },
+  {
+    id: 37,
+    title: "Why It Stands Out",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog37,
+    date: "2022-04-01",
+    category: "Our Story",
+    content: `In a city filled with diverse dining options, finding the best South Indian restaurant in Ottawa can feel overwhelming. However, Dosa King continues to stand out because of its consistency, authenticity, and dedication to quality.
+The restaurant doesn’t try to reinvent tradition—it celebrates it. This honest approach resonates with customers who are looking for genuine flavors rather than modern shortcuts.`
+  },
+  {
+    id: 38,
+    title: "Final Thoughts",
+    excerpt: "Master the art of pairing different chutneys with dosas. From coconut chutney to tomato chutney, learn which combinations work best for each dosa variety.",
+    image: blog38,
+    date: "2022-03-01",
+    category: "Culture",
+    content: `If you’re searching for a place that offers authentic South Indian cuisine, comforting meals, and a welcoming atmosphere, Dosa King is a destination worth exploring. It captures the true spirit of South Indian cooking while making it accessible to everyone in Ottawa.
+So the next time you’re craving something flavorful, satisfying, and deeply rooted in tradition, head to Dosa King—where every meal feels like a journey to South India.`
   },
 ];
 
