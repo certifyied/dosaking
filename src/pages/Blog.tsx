@@ -33,7 +33,7 @@ import blog13 from "@/assets/blog_images/chicken-saagwala-with-spinach-1957402-h
 import blog14 from "@/assets/blog_images/chicken-chickpea-curry-163942-1.jpg";
 import blog15 from "@/assets/blog_images/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2016__04__20160418-Aloo-GobiHelen-Rushbrook-dfa81f9ba7f249879a91c127dc6ff385.jpg";
 import blog16 from "@/assets/delicious-indian-veg-food.jpg";
-import blog17 from "@/assets/Dosa.jpg";
+import blog17 from "@/assets/2017a19b5445848da28207517f466e1d.jpg";
 import blog18 from "@/assets/Blog-2.jpg";
 import blog19 from "@/assets/indian-food-dosa-X2.jpg";
 import blog20 from "@/assets/egyptian-traditional-food-1200x720.jpg";
@@ -51,10 +51,10 @@ import blog31 from "@/assets/India-for-Beginners-custom-tours-8.jpg";
 import blog32 from "@/assets/cj7v468_dosa_625x300_18_January_23.jpg";
 import blog33 from "@/assets/dosa-600x400.jpg";
 import blog34 from "@/assets/PHOTO-2022-01-16-12-06-09.jpg";
-import blog35 from "@/assets/dosa.jpg";
+import blog35 from "@/assets/2017a19b5445848da28207517f466e1d.jpg";
 import blog36 from "@/assets/Dosa (1).jpg";
 import blog37 from "@/assets/Shot_21_-_Finished_dosas.webp";
-import blog38 from "@/assets/1400x919-Masala-dosa-filo-samosas-5e8ef544-dbe0-459a-babd-02527ba9ccbb-0-1400x919.jpg";
+import blog38 from "@/assets/82571270.avif";
 
 // Sample blog data - can be moved to a separate file or API later
 const blogPosts = [
