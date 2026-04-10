@@ -106,13 +106,13 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                   <p>
-                    Dosa King Ottawa was born from a dream: to bring the soul-warming flavors of South India to Ottawa. Our founder grew up in Kerala, where dosas aren't just food—they're a way of life. The aroma of sambar simmering, the sound of mustard seeds popping, the golden crisp of dosa on a hot griddle—these traditions inspire every dish we serve.
+                    Dosa King Ottawa was born from a heartfelt dream—to bring the comforting, authentic flavors of South India to families across the city. As a proud family South Indian restaurant in Ottawa, our story begins in Kerala, where our founder grew up surrounded by the rich aromas of home-cooked meals, from sizzling mustard seeds to perfectly crisp dosas fresh off the griddle.
                   </p>
                   <p>
-                    Established in October 2023, we set out with a clear vision: to offer high-quality South Indian cuisine prepared using traditional recipes, fresh ingredients, and uncompromising standards. Word of our crispy, golden dosas spread quickly. Neighbors became regulars, and regulars became family. What started as a passion project became a movement to preserve and celebrate authentic South Indian cuisine.
+                    Since opening in October 2023, our mission has been simple: serve traditional South Indian cuisine made with fresh ingredients, time-honored recipes, and genuine care. What started as a small passion quickly grew into a beloved gathering place where guests feel like family.
                   </p>
                   <p>
-                    Today, Dosa King stands as a testament to that humble beginning. Every dosa we serve carries the same love, the same precision, and the same dedication to perfection that inspired us from day one. Our commitment to quality and tradition has earned us recognition as the best South Indian restaurant in Ottawa.
+                    Today, Dosa King continues to celebrate heritage, flavor, and togetherness—offering every guest an authentic dining experience that brings South Indian traditions straight to your table.
                   </p>
                 </div>
               </div>
@@ -130,10 +130,10 @@ const About = () => {
                 Authentic South Indian <span className="text-gradient">Dining Experience in Canada</span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
-                DosaKing Palace is a premier South Indian restaurant dedicated to serving authentic flavours inspired by the rich culinary traditions of South India. When you walk through our doors at 93 Holland Avenue, you're experiencing more than a meal—you're stepping into a tradition that spans generations.
+               Dosa King Palace is a family South Indian restaurant in Ottawa dedicated to serving authentic flavours inspired by the rich culinary heritage of South India. When you step through our doors, you’re not just enjoying a meal—you’re experiencing a tradition that has been lovingly passed down through generations.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
-                Whether you're a homesick student craving a taste of Chennai, an adventurous foodie exploring new cuisines, or a family seeking comfort food, we've become known as the best South Indian restaurant in Ottawa by staying true to what matters: honest, delicious, soul-satisfying food prepared with love and authenticity.
+                Whether you’re a student missing the taste of home, a food lover eager to explore bold new flavours, or a family looking for comforting, wholesome dishes, Dosa King Palace offers something for everyone. Our commitment to quality, authenticity, and warm hospitality has made us a trusted destination for those seeking genuine South Indian cuisine in a welcoming, family-friendly setting.
               </p>
             </div>
           </ScrollReveal>
@@ -378,14 +378,14 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed text-left">
                 <p>
-                  Visit us on any given day and you'll see something special: students studying over steaming plates of sambar rice, families celebrating birthdays with our feast-sized thalis, couples on their weekly "dosa date," and first-timers discovering flavors they'll crave for years to come.
+                  Spend a day at Dosa King Palace, a beloved family South Indian restaurant in Ottawa, and you’ll witness something truly special. Students gather over comforting plates of sambar rice, families celebrate milestones with generous thalis, and friends and couples come together to enjoy their favorite dosas. It’s a place where both familiar faces and first-time guests feel equally at home.
                 </p>
-                <p>
+                {/* <p>
                   These moments—the laughter, the satisfied sighs after that first bite, the "this tastes exactly like my grandmother's cooking"—this is why we do what we do. We're not just serving food; we're creating memories and building a community around the rich traditions of South Indian cuisine.
                 </p>
                 <p className="text-center font-medium text-foreground">
                   At Dosa King, we're building more than a restaurant—we're building a place where food brings people together, where traditions are honored, and where every meal is prepared with love.
-                </p>
+                </p> */}
               </div>
             </div>
           </ScrollReveal>
