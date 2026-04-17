@@ -58,7 +58,8 @@ function Ourservices() {
                             className="rounded-3xl overflow-hidden shadow-xl bg-white/80 backdrop-blur"
                         >
                             <div className="relative">
-                                <img src="/public/Wedding-Catering.jpg" />
+                                <img src={cateringImg} alt="Catering" className="w-full h-60 object-cover" />
+
 
                                 {/* <div className="absolute top-4 left-4 bg-yellow-400 p-3 rounded-xl">
                                     🍽️
@@ -99,7 +100,7 @@ function Ourservices() {
                             className="rounded-3xl overflow-hidden shadow-xl bg-white/80 backdrop-blur"
                         >
                             <div className="relative">
-                                <img src="/public/66a3c772f376f0a78d0d54c6_wa-frost-sophies-room-1200-11c.jpg" />
+                                <img src={eventImg} alt="Private Events" className="w-full h-60 object-cover" />
 
                                 {/* <div className="absolute top-4 left-4 bg-yellow-400 p-3 rounded-xl">
                                     🎉
