@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
-import menuPdf from "@/assets/dosa king menu .pdf";
+import menuPdf from "@/assets/dosa-king-menu.pdf";
 
 const Menu = () => {
   return (

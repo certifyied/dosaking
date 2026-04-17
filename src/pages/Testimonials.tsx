@@ -23,58 +23,11 @@ const testimonials = [
     rating: 5,
   },
   {
-    id: 3,
-    name: "Tyson Avery",
-    message: "Fantastic dining experience! Perfectly crisp dosas served with delicious chutneys and sambar. The noodles were spicy, fresh, and full of flavor. Calm ambiance and great service made the meal even better.",
-    rating: 5,
-    ratings: "Food 5/5 | Service 5/5 | Atmosphere 5/5",
-  },
-  {
     id: 4,
     name: "Atif Mehmood",
     message: "One of the best dosas in Ottawa—crispy, flavorful, and perfectly cooked. Chicken 65 biriyani was generous and delicious. Finished with authentic Indian coffee that tasted just like home.",
     rating: 5,
     recommended: "Mysore Masala Dosa, Chicken 65 Biriyani",
-  },
-  {
-    id: 5,
-    name: "Indrani Das",
-    message: "Fresh, crispy dosas and delicious food overall. Tried Chicken Kothu Porotta for the first time and loved it. Quick service and a calm environment. Highly recommended for food lovers.",
-    rating: 5,
-    ratings: "Food 5/5 | Service 5/5 | Atmosphere 4/5",
-  },
-  {
-    id: 6,
-    name: "Gurpreet Khokhar",
-    message: "Absolutely loved the authentic flavors! Ghee masala dosa and idli-vada were outstanding. Special thanks to Mishal for the warm and attentive service. Comforting South Indian food done right.",
-    rating: 5,
-  },
-  {
-    id: 7,
-    name: "Aiswarya Madhu",
-    message: "The best South Indian restaurant I've visited in Ottawa. Kothu porotta and chicken tikka dosa were mouth-watering. Generous portions and excellent service made the experience even better.",
-    rating: 5,
-    recommended: "Chicken 65 Biriyani",
-  },
-  {
-    id: 8,
-    name: "Kirti Gupta",
-    message: "Loved the vibe and the food! The Chicken Porotta and Chicken Biriyani combo is unforgettable. Easily the best South Indian spot I've tried so far.",
-    rating: 5,
-  },
-  {
-    id: 9,
-    name: "Anjitha T Raj",
-    message: "Amazing experience with delicious food and friendly staff. Mysore Podi Masala Dosa, Ghee Podi Idly, and Medu Vada were all perfect. Will definitely be back again!",
-    rating: 5,
-    recommended: "Masala Dosa, Mysore Masala Dosa, Podi Idly",
-  },
-  {
-    id: 10,
-    name: "Adithyan K. O. P",
-    message: "Warm, welcoming service and outstanding food quality. The mutton biryani was aromatic, flavorful, and generously portioned. Excellent value for authentic South Indian flavors.",
-    rating: 5,
-    ratings: "Food 5/5 | Service 5/5 | Atmosphere 5/5",
   },
 ];
 

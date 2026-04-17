@@ -14,6 +14,12 @@ import plainDosa from "@/assets/new_plain_dosa.jpg";
 import masalaDosa from "@/assets/new_masala_dosa.jpg";
 import gheeDosa from "@/assets/new_ghee_roast.jpg";
 import cheeseDosa from "@/assets/new_Cheese _Dosa.jpeg";
+import springDosa from "@/assets/Udupi-Special-Spring-Dosa.webp";
+import paperDosa from "@/assets/2.webp";
+import OurStore from "@/components/OurStore";
+import OurFood from "@/components/OurFood";
+import OurBar from "@/components/OurBar";
+import menuPdf from "@/assets/dosa-king-menu.pdf";
 
 const featuredItems = [
   {
@@ -38,6 +44,16 @@ const featuredItems = [
     image: cheeseDosa,
     tag: "Chef's Special",
   },
+   {
+    name: "Spring Dosa",
+    description: "Crispy dosa filled with fresh vegetables and light seasoning",
+    image: springDosa,
+  },
+  {
+    name: "Paper Dosa",
+    description: "Extra thin and ultra crispy traditional South Indian dosa",
+    image: paperDosa,
+  },
 ];
 
 const stats = [
@@ -52,12 +68,12 @@ const Index = () => {
   const heroOpacity = useTransform(scrollY, [0, 400], [1, 0]);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <Helmet>
         <title>Best South Indian Restaurant Ottawa, Canada | Dosa King Palace</title>
-        <meta 
-          name="description" 
-          content="Enjoy authentic South Indian flavors at the best South Indian restaurant in Canada, Ottawa. Dosa King Palace serves crispy dosas, rich curries, and traditional tastes." 
+        <meta
+          name="description"
+          content="Enjoy authentic South Indian flavors at the best South Indian restaurant in Canada, Ottawa. Dosa King Palace serves crispy dosas, rich curries, and traditional tastes."
         />
       </Helmet>
       <StructuredData type="both" />
@@ -101,7 +117,7 @@ const Index = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight"
           >
-            The Best South Indian Restaurant in Ottawa
+            Ottawa's favourite south indian restaurant
           </motion.h1>
 
           <motion.div
@@ -110,19 +126,35 @@ const Index = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4"
           >
+            {/* <Button variant="hero" size="xl" asChild>
+              <Link to="/menu">Explore Menu</Link>
+            </Button> */}
             <Button variant="hero" size="xl" asChild>
-              <Link to="/menu">View Menu</Link>
-            </Button>
+  <a
+    href={menuPdf}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Explore Menu
+  </a>
+</Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a
+              {/* <a
                 href="https://order.online/store/25955986?pickup=true&redirected=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Order food from Dosa King online"
                 className="cursor-pointer"
               >
-                Order Now
-              </a>
+                Reservation
+              </a> */}
+              <Link
+                to="/reservation"
+                aria-label="Go to reservation page"
+                className="cursor-pointer"
+              >
+                Reservation
+              </Link>
             </Button>
           </motion.div>
         </motion.div>
@@ -183,12 +215,26 @@ const Index = () => {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {featuredItems.map((item, index) => (
               <ScrollReveal key={index} delay={index * 0.1}>
                 <MenuCard {...item} />
               </ScrollReveal>
             ))}
+          </div> */}
+          <div className="overflow-x-auto scrollbar-hide">
+            <div className="flex gap-6 snap-x snap-mandatory px-2 pb-4">
+              {featuredItems.map((item, index) => (
+                <div
+                  key={index}
+                  className="min-w-[280px] sm:min-w-[320px] lg:min-w-[25%] snap-start"
+                >
+                  <ScrollReveal delay={index * 0.1}>
+                    <MenuCard {...item} />
+                  </ScrollReveal>
+                </div>
+              ))}
+            </div>
           </div>
 
           <ScrollReveal delay={0.4}>
@@ -200,6 +246,10 @@ const Index = () => {
           </ScrollReveal>
         </div>
       </section>
+
+      <OurStore />
+      <OurFood />
+      <OurBar />
 
       {/* Story Section */}
       <section className="py-24 bg-card">
@@ -258,7 +308,7 @@ const Index = () => {
                     aria-label="Order food from Dosa King online"
                     className="cursor-pointer"
                   >
-                    Order Now
+                    Order Online
                   </a>
                 </Button>
                 <Button variant="heroOutline" size="xl" asChild>

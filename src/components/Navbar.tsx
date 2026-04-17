@@ -4,15 +4,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 import dosakingLogo from "@/assets/dosaking_logo.png";
+import menuPdf from "@/assets/dosa-king-menu.pdf";
 
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Menu", path: "/menu" },
+  // { name: "Menu", type: "pdf" },
   { name: "Gallery", path: "/gallery" },
   { name: "Blog", path: "/blog" },
   { name: "Testimonials", path: "/testimonials" },
   { name: "Contact", path: "/contact" },
+  { name: "Our services", path: "/services" },
 ];
 
 export const Navbar = () => {
@@ -38,11 +40,10 @@ export const Navbar = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
             ? "bg-background/95 backdrop-blur-md shadow-soft border-b border-border/50"
             : "bg-transparent"
-        }`}
+          }`}
       >
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-20">
@@ -57,7 +58,7 @@ export const Navbar = () => {
             </Link>
 
             {/* Desktop Nav */}
-            <div className="hidden lg:flex items-center gap-8">
+            {/* <div className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
@@ -77,6 +78,32 @@ export const Navbar = () => {
                   )}
                 </Link>
               ))}
+            </div> */}
+            <div className="hidden lg:flex items-center gap-8">
+              {navLinks.map((link) =>
+                link.name === "Menu" ? (
+                  <a
+                    key="menu-pdf"
+                    href={menuPdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-muted-foreground hover:text-foreground"
+                  >
+                    {link.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    className={`relative font-medium transition-colors duration-300 ${location.pathname === link.path
+                        ? "text-primary"
+                        : "text-muted-foreground hover:text-foreground"
+                      }`}
+                  >
+                    {link.name}
+                  </Link>
+                )
+              )}
             </div>
 
             {/* CTA Button */}
@@ -89,7 +116,7 @@ export const Navbar = () => {
                   aria-label="Order food from Dosa King online"
                   className="cursor-pointer"
                 >
-                  Order Now
+                  Order Online
                 </a>
               </Button>
             </div>
@@ -135,16 +162,26 @@ export const Navbar = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
                   >
-                    <Link
-                      to={link.path}
-                      className={`block py-3 px-4 rounded-lg text-lg font-medium transition-all ${
-                        location.pathname === link.path
-                          ? "bg-primary/10 text-primary"
-                          : "text-foreground hover:bg-muted"
-                      }`}
-                    >
-                      {link.name}
-                    </Link>
+                    {link.name === "Menu" ? (
+                      <a
+                        href={menuPdf}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block py-3 px-4 rounded-lg text-lg font-medium text-foreground hover:bg-muted"
+                      >
+                        {link.name}
+                      </a>
+                    ) : (
+                      <Link
+                        to={link.path}
+                        className={`block py-3 px-4 rounded-lg text-lg font-medium transition-all ${location.pathname === link.path
+                            ? "bg-primary/10 text-primary"
+                            : "text-foreground hover:bg-muted"
+                          }`}
+                      >
+                        {link.name}
+                      </Link>
+                    )}
                   </motion.div>
                 ))}
                 <motion.div

@@ -36,7 +36,7 @@ const values = [
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <Helmet>
         <title>Best South Indian Restaurant Ottawa, Canada | Dosa King Palace</title>
         <meta 
@@ -98,9 +98,9 @@ const About = () => {
 
             <ScrollReveal direction="right">
               <div className="space-y-6">
-                <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                {/* <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
                   Our Story
-                </span>
+                </span> */}
                 <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
                   From Tradition to <span className="text-gradient">Your Table</span>
                 </h2>
