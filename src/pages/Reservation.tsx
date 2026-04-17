@@ -28,13 +28,12 @@ function Reservation() {
     };
 
     const getMailToLink = () => {
-        const subject = `Booking Request - ${
-            activeTab === "table"
+        const subject = `Booking Request - ${activeTab === "table"
                 ? "Table Reservation"
                 : activeTab === "catering"
-                ? "Catering Service"
-                : "Private Event"
-        }`;
+                    ? "Catering Service"
+                    : "Private Event"
+            }`;
 
         const bodyLines = [
             `Reservation Type: ${subject}`,
@@ -467,26 +466,17 @@ function Reservation() {
                             </div>
 
                             {/* Opening Hours */}
-                            <div className="bg-[#f3f5f4] dark:bg-[#1f1f1f] rounded-2xl p-6 shadow-xl">
-                                <h3 className="text-lg font-semibold mb-4 text-yellow-500 flex items-center gap-2">
+                            <div className="text-[#1a120d] bg-[#f3f5f4] dark:bg-[#1f1f1f] rounded-2xl p-6 shadow-xl">
+                                <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                                     🕒 Opening Hours
                                 </h3>
 
                                 <div className="grid grid-cols-2 gap-6 text-sm">
                                     <div className="bg-muted/50 p-4 rounded-xl">
-                                        <p className="font-semibold mb-2">Lunch Service</p>
-                                        <p className="text-muted-foreground">Mon - Fri</p>
-                                        <p className="font-medium">11:00 AM - 3:00 PM</p>
-                                        <p className="text-muted-foreground mt-2">Sat - Sun</p>
-                                        <p className="font-medium">11:30 AM - 4:00 PM</p>
-                                    </div>
-
-                                    <div className="bg-muted/50 p-4 rounded-xl">
-                                        <p className="font-semibold mb-2">Dinner Service</p>
-                                        <p className="text-muted-foreground">Sun - Thu</p>
-                                        <p className="font-medium">5:00 PM - 10:00 PM</p>
-                                        <p className="text-muted-foreground mt-2">Fri - Sat</p>
-                                        <p className="font-medium">5:00 PM - 11:30 PM</p>
+                                        <p>Mon - Sat</p>
+                                        <p className="font-medium">11:00 AM - 10:00 PM</p>
+                                        <p className="mt-2">Sun</p>
+                                        <p className="font-medium">11:00 AM - 10:30 PM</p>
                                     </div>
                                 </div>
                             </div>
