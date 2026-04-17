@@ -5,6 +5,9 @@ import { Navbar } from "@/components/Navbar";
 import { FaUtensils } from "react-icons/fa";
 import { MdCelebration } from "react-icons/md";
 
+import cateringImg from "@/assets/Wedding-Catering.jpg";
+import eventImg from "@/assets/66a3c772f376f0a78d0d54c6_wa-frost-sophies-room-1200-11c.jpg";
+
 function Ourservices() {
     return (
         <div>
@@ -55,11 +58,7 @@ function Ourservices() {
                             className="rounded-3xl overflow-hidden shadow-xl bg-white/80 backdrop-blur"
                         >
                             <div className="relative">
-                                <img
-                                    src="/src/assets/Wedding-Catering.jpg"
-                                    alt="Catering"
-                                    className="w-full h-60 object-cover"
-                                />
+                                <img src="/public/Wedding-Catering.jpg" />
 
                                 {/* <div className="absolute top-4 left-4 bg-yellow-400 p-3 rounded-xl">
                                     🍽️
@@ -100,11 +99,7 @@ function Ourservices() {
                             className="rounded-3xl overflow-hidden shadow-xl bg-white/80 backdrop-blur"
                         >
                             <div className="relative">
-                                <img
-                                    src="/src/assets/66a3c772f376f0a78d0d54c6_wa-frost-sophies-room-1200-11c.jpg"
-                                    alt="Private Events"
-                                    className="w-full h-60 object-cover"
-                                />
+                                <img src="/public/66a3c772f376f0a78d0d54c6_wa-frost-sophies-room-1200-11c.jpg" />
 
                                 {/* <div className="absolute top-4 left-4 bg-yellow-400 p-3 rounded-xl">
                                     🎉
