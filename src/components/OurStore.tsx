@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import store1 from "@/assets/photo-1604719312566-8912e9227c6a.avif";
-import store2 from "@/assets/photo-1604719312566-8912e9227c6a.avif";
-import store3 from "@/assets/photo-1604719312566-8912e9227c6a.avif";
-import store4 from "@/assets/photo-1604719312566-8912e9227c6a.avif";
-import store5 from "@/assets/photo-1604719312566-8912e9227c6a.avif";
-import store6 from "@/assets/photo-1604719312566-8912e9227c6a.avif";
+import store1 from "@/assets/MonLapin-Montreal-2025-Canadas100Best-feat-1440x900.jpg";
+import store2 from "@/assets/34738585185_36a26560bc_k.jpg";
+import store3 from "@/assets/00-cover-23-1920x960.jpg";
+import store4 from "@/assets/Five-sails-Canada.jpg";
+import store5 from "@/assets/GettyImages-1476284347.jpg";
+import store6 from "@/assets/DSF0108.webp";
 
 const images = [store1, store2, store3, store4, store5, store6];
 
