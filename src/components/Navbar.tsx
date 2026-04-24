@@ -191,7 +191,7 @@ export const Navbar = () => {
                   className="pt-4"
                 >
                   <Button variant="hero" size="lg" className="w-full" asChild>
-                    <a
+                    {/* <a
                       href="https://order.online/store/25955986?pickup=true&redirected=true"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -199,7 +199,7 @@ export const Navbar = () => {
                       className="cursor-pointer"
                     >
                       Order Now
-                    </a>
+                    </a> */}
                   </Button>
                 </motion.div>
               </div>
