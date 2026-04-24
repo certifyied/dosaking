@@ -14,7 +14,7 @@ const navLinks = [
   { name: "Blog", path: "/blog" },
   { name: "Testimonials", path: "/testimonials" },
   { name: "Contact", path: "/contact" },
-  { name: "Our services", path: "/services" },
+  // { name: "Our services", path: "/services" },
 ];
 
 export const Navbar = () => {
@@ -107,7 +107,7 @@ export const Navbar = () => {
             </div>
 
             {/* CTA Button */}
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
               <Button variant="hero" size="lg" asChild>
                 <a
                   href="https://order.online/store/25955986?pickup=true&redirected=true"
@@ -119,7 +119,7 @@ export const Navbar = () => {
                   Order Online
                 </a>
               </Button>
-            </div>
+            </div> */}
 
             {/* Mobile Menu Toggle */}
             <button

@@ -44,7 +44,7 @@ const featuredItems = [
     image: cheeseDosa,
     tag: "Chef's Special",
   },
-   {
+  {
     name: "Spring Dosa",
     description: "Crispy dosa filled with fresh vegetables and light seasoning",
     image: springDosa,
@@ -121,42 +121,54 @@ const Index = () => {
           </motion.h1>
 
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4"
-          >
-            {/* <Button variant="hero" size="xl" asChild>
-              <Link to="/menu">Explore Menu</Link>
-            </Button> */}
-            <Button variant="hero" size="xl" asChild>
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.8 }}
+  className="flex flex-wrap justify-center gap-4"
+>
+  <Button variant="hero" size="xl" asChild>
+    <a
+      href={menuPdf}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Explore Menu
+    </a>
+  </Button>
+
+  <Button variant="hero" size="xl" asChild>
+    <Link
+      to="/reservation"
+      aria-label="Go to reservation page"
+      className="cursor-pointer"
+    >
+      Reservation
+    </Link>
+  </Button>
+
+  {/* New Button 1 */}
+  <Button variant="hero" size="xl" asChild>
   <a
-    href={menuPdf}
+    href="https://order.online/store/25955986?pickup=true&redirected=true"
     target="_blank"
     rel="noopener noreferrer"
+    className="cursor-pointer"
   >
-    Explore Menu
+    Order Online
   </a>
 </Button>
-            <Button variant="heroOutline" size="xl" asChild>
-              {/* <a
-                href="https://order.online/store/25955986?pickup=true&redirected=true"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Order food from Dosa King online"
-                className="cursor-pointer"
-              >
-                Reservation
-              </a> */}
-              <Link
-                to="/reservation"
-                aria-label="Go to reservation page"
-                className="cursor-pointer"
-              >
-                Reservation
-              </Link>
-            </Button>
-          </motion.div>
+
+  {/* New Button 2 */}
+  <Button variant="hero" size="xl" asChild>
+    <Link
+      to="/services"
+      className="cursor-pointer"
+    >
+      Our services
+    </Link>
+  </Button>
+
+</motion.div>
         </motion.div>
 
         {/* Scroll Indicator */}
