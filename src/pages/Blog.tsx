@@ -1156,6 +1156,7 @@ const formatDate = (dateString: string) => {
   });
 };
 
+
 const Blog = () => {
   const [selectedPost, setSelectedPost] = useState<typeof blogPosts[0] | null>(null);
 
