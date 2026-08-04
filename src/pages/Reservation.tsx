@@ -29,10 +29,10 @@ function Reservation() {
 
     const getMailToLink = () => {
         const subject = `Booking Request - ${activeTab === "table"
-                ? "Table Reservation"
-                : activeTab === "catering"
-                    ? "Catering Service"
-                    : "Private Event"
+            ? "Table Reservation"
+            : activeTab === "catering"
+                ? "Catering Service"
+                : "Private Event"
             }`;
 
         const bodyLines = [
@@ -188,6 +188,12 @@ function Reservation() {
                                                 >
                                                     <option>1 Person</option>
                                                     <option>2 People</option>
+                                                    <option>3 People</option>
+                                                    <option>4 People</option>
+                                                    <option>5 People</option>
+                                                    <option>6-10 People</option>
+                                                    <option>11-15 People</option>
+                                                    <option>16-25 People</option>
                                                 </select>
                                                 <span className="absolute right-3 top-[38px] text-gray-400 text-xs">▼</span>
                                             </div>
