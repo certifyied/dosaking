@@ -40,14 +40,20 @@ export const StructuredData = ({ type = "both" }: StructuredDataProps) => {
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "07:00",
-        "closes": "22:00"
+        "opens": "11:00",
+        "closes": "23:00"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday", "Sunday"],
-        "opens": "06:00",
+        "dayOfWeek": ["Saturday"],
+        "opens": "10:00",
         "closes": "23:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday"],
+        "opens": "10:00",
+        "closes": "22:00"
       }
     ],
     "aggregateRating": {
