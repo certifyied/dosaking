@@ -35,7 +35,11 @@ const contactInfo: ContactInfo[] = [
   {
     icon: Clock,
     title: "Opening Hours",
-    details: ["Mon - Sat: 11:00 AM - 10:00 PM", "Sun: 11:00 AM - 10:00 PM"],
+    details: [
+      "Mon - Fri: 11:00 AM - 11:00 PM",
+      "Sat: 10:00 AM - 11:00 PM",
+      "Sun: 10:00 AM - 10:00 PM",
+    ],
   },
   {
     icon: Mail,

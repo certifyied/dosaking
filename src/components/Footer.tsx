@@ -99,8 +99,9 @@ export const Footer = () => {
               <div className="flex items-start gap-3">
                 <Clock size={20} className="text-primary mt-1 shrink-0" />
                 <div className="text-muted-foreground">
-                  <div>Mon - Sat: 11:00 AM - 10:00 PM</div>
-                  <div>Sun: 11:00 AM - 10:00 PM</div>
+                  <div>Mon - Fri: 11:00 AM - 11:00 PM</div>
+                  <div>Sat: 10:00 AM - 11:00 PM</div>
+                  <div>Sun: 10:00 AM - 10:00 PM</div>
                 </div>
               </div>
             </address>

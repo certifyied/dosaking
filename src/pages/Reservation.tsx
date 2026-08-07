@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { Navbar } from "@/components/Navbar";
-import { useState } from "react";
 
 const initialFormData = {
     name: "",
@@ -10,11 +9,73 @@ const initialFormData = {
     phone: "",
     guests: "1 Person",
     date: "",
-    time: "6:00 PM",
+    time: "",
     venue: "",
     budget: "",
     eventType: "",
     specialRequests: "",
+};
+
+const getHoursForDate = (dateStr: string) => {
+    if (!dateStr) {
+        return { startHour: 11, startMin: 0, endHour: 23, endMin: 0 };
+    }
+    const [year, month, day] = dateStr.split("-").map(Number);
+    const date = new Date(year, month - 1, day);
+    const dayOfWeek = date.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+
+    if (dayOfWeek === 0) {
+        // Sunday: 10 AM - 10 PM
+        return { startHour: 10, startMin: 0, endHour: 22, endMin: 0 };
+    } else if (dayOfWeek === 6) {
+        // Saturday: 10 AM - 11 PM
+        return { startHour: 10, startMin: 0, endHour: 23, endMin: 0 };
+    } else {
+        // Weekdays (Monday-Friday): 11 AM - 11 PM
+        return { startHour: 11, startMin: 0, endHour: 23, endMin: 0 };
+    }
+};
+
+const generateTimeSlots = (dateStr: string, type: "appointment" | "reservation") => {
+    const { startHour, startMin, endHour, endMin } = getHoursForDate(dateStr);
+
+    let currentHour = startHour;
+    let currentMin = startMin;
+
+    if (type === "reservation") {
+        // 30 minutes after schedule start
+        currentMin += 30;
+        if (currentMin >= 60) {
+            currentHour += 1;
+            currentMin -= 60;
+        }
+    } else {
+        // appointment: half hour before schedule start
+        currentMin -= 30;
+        if (currentMin < 0) {
+            currentHour -= 1;
+            currentMin += 60;
+        }
+    }
+
+    const slots = [];
+    const endMinutesTotal = endHour * 60 + endMin;
+
+    while (currentHour * 60 + currentMin < endMinutesTotal) {
+        let hour12 = currentHour % 12;
+        if (hour12 === 0) hour12 = 12;
+        const ampm = currentHour >= 12 ? "PM" : "AM";
+        const minutesStr = currentMin === 0 ? "00" : currentMin.toString();
+        slots.push(`${hour12}:${minutesStr} ${ampm}`);
+
+        currentMin += 30;
+        if (currentMin >= 60) {
+            currentHour += 1;
+            currentMin -= 60;
+        }
+    }
+
+    return slots;
 };
 
 function Reservation() {
@@ -22,6 +83,21 @@ function Reservation() {
     const [formData, setFormData] = useState(initialFormData);
 
     const resetForm = () => setFormData(initialFormData);
+
+    const timeOptions = useMemo(() => {
+        const type = activeTab === "table" ? "reservation" : "appointment";
+        return generateTimeSlots(formData.date, type);
+    }, [formData.date, activeTab]);
+
+    useEffect(() => {
+        if (timeOptions.length > 0) {
+            if (!timeOptions.includes(formData.time)) {
+                setFormData((prev) => ({ ...prev, time: timeOptions[0] }));
+            }
+        } else {
+            setFormData((prev) => ({ ...prev, time: "" }));
+        }
+    }, [timeOptions, formData.time]);
 
     const handleInput = (field: string, value: string) => {
         setFormData((prev) => ({ ...prev, [field]: value }));
@@ -217,8 +293,11 @@ function Reservation() {
                                                     onChange={(e) => handleInput("time", e.target.value)}
                                                     required
                                                 >
-                                                    <option>6:00 PM</option>
-                                                    <option>7:00 PM</option>
+                                                    {timeOptions.map((time) => (
+                                                        <option key={time} value={time}>
+                                                            {time}
+                                                        </option>
+                                                    ))}
                                                 </select>
                                                 <span className="absolute right-3 top-[38px] text-gray-400 text-xs">▼</span>
                                             </div>
@@ -292,8 +371,11 @@ function Reservation() {
                                                     onChange={(e) => handleInput("time", e.target.value)}
                                                     required
                                                 >
-                                                    <option>6:00 PM</option>
-                                                    <option>7:00 PM</option>
+                                                    {timeOptions.map((time) => (
+                                                        <option key={time} value={time}>
+                                                            {time}
+                                                        </option>
+                                                    ))}
                                                 </select>
                                                 <span className="absolute right-3 top-[38px] text-gray-400 text-xs">▼</span>
                                             </div>
@@ -399,9 +481,11 @@ function Reservation() {
                                                     onChange={(e) => handleInput("time", e.target.value)}
                                                     required
                                                 >
-                                                    <option>6:00 PM</option>
-                                                    <option>7:00 PM</option>
-                                                    <option>8:00 PM</option>
+                                                    {timeOptions.map((time) => (
+                                                        <option key={time} value={time}>
+                                                            {time}
+                                                        </option>
+                                                    ))}
                                                 </select>
                                                 <span className="absolute right-3 top-[38px] text-gray-400 text-xs">▼</span>
                                             </div>
@@ -477,12 +561,20 @@ function Reservation() {
                                     🕒 Opening Hours
                                 </h3>
 
-                                <div className="grid grid-cols-2 gap-6 text-sm">
-                                    <div className="bg-muted/50 p-4 rounded-xl">
-                                        <p>Mon - Sat</p>
-                                        <p className="font-medium">11:00 AM - 10:00 PM</p>
-                                        <p className="mt-2">Sun</p>
-                                        <p className="font-medium">11:00 AM - 10:30 PM</p>
+                                <div className="text-sm">
+                                    <div className="bg-muted/50 p-4 rounded-xl space-y-2">
+                                        <div className="flex justify-between border-b border-border/50 pb-1">
+                                            <span>Mon - Fri</span>
+                                            <span className="font-medium text-right">11:00 AM - 11:00 PM</span>
+                                        </div>
+                                        <div className="flex justify-between border-b border-border/50 pb-1">
+                                            <span>Sat</span>
+                                            <span className="font-medium text-right">10:00 AM - 11:00 PM</span>
+                                        </div>
+                                        <div className="flex justify-between">
+                                            <span>Sun</span>
+                                            <span className="font-medium text-right">10:00 AM - 10:00 PM</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
